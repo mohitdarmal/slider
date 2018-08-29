@@ -1,0 +1,139 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box
+    
+}
+
+.container{
+    position: relative;
+    margin: auto;
+    max-width: 100%;
+}
+
+img{width: 100%; position: absolute;}
+/* .img{ opacity : 0;}*/
+
+.imgNone{display: none;}
+.active{display: block}
+
+
+.lftAr,
+.rhtAr {
+    position: absolute;
+    color: orange;
+    font-size: 34px;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+  }
+
+.lftAr {
+    top: 40%;
+    transform: translateY(-40%);
+}
+
+.rhtAr {
+    float: right;
+    top: 40%;
+    transform: translateY(-40%);
+    right: 0;
+}
+
+.ani{
+    animation-name: leftToright;
+    animation-duration: 1.5s;
+}
+
+@keyframes leftToright {
+    0% {
+        width: 100%;
+        top: 0%;
+        left: -100%;
+    }
+    100% {
+        width: 100%;
+        top: 0%;
+        left: 0%;
+    }
+}
+
+/* @keyframes leftToright {
+    0% {
+       opacity : 0;
+    }
+
+
+    100% {
+opacity: 1;
+    }
+} */
+
+
+
+
+/* box-shadow: 0px 1px 1px 2px #0000001f; */
+/* .container .img {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    
+}
+
+.container .img img {
+    width: 100%
+}
+
+
+
+.lftAr,
+.rhtAr {
+    position: absolute;
+    color: orange;
+}
+
+.lftAr {
+    top: 40%;
+    transform: translateY(-40%);
+}
+
+.rhtAr {
+    float: right;
+    top: 40%;
+    transform: translateY(-40%);
+    right: 0;
+}
+
+@keyframes leftToright {
+    0% {
+        width: 100%;
+        top: 0%;
+        left: 0%;
+    }
+    100% {
+        width: 0%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes same {
+    0% {
+        width: 100%;
+        top: 0%;
+        left: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+} */
